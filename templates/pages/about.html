@@ -1,12 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-</head>
-<body>
-    <h1>About Me</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit maiores architecto tenetur quibusdam aut facere, necessitatibus eius ex similique accusamus laborum quod. Voluptatum vitae facere quibusdam in. Pariatur, commodi eligendi!</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    About Me
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/about.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>About Me</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit maiores architecto tenetur quibusdam aut facere, necessitatibus eius ex similique accusamus laborum quod. Voluptatum vitae facere quibusdam in. Pariatur, commodi eligendi!</p>
+    </div>
+{% endblock %}
